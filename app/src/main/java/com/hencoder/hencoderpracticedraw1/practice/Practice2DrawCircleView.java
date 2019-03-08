@@ -33,11 +33,13 @@ public class Practice2DrawCircleView extends View {
 //        练习内容：使用 canvas.drawCircle() 方法画圆
 //        一共四个圆：1.实心圆 2.空心圆 3.蓝色实心圆 4.线宽为 20 的空心圆
         mPaint = new Paint();
-        mPaint.setColor(Color.BLACK);
+       // mPaint.setColor(Color.BLACK);
         canvas.drawCircle(100,100,80,mPaint);
-        mPaint.setColor(Color.BLACK);
+
+        mPaint.setColor(Color.RED);
         mPaint.setStyle(Paint.Style.STROKE);
         canvas.drawCircle(500,200,180,mPaint);
+
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(20);
